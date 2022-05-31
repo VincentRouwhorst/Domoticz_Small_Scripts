@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 #--------------------------------------
 #
-#              AquariumAan.py
-#  Switch Hue Light On in 45 min
+#              AquariumUit.py
+#  Switch Hue Light Off in 45 min
 #
 # Author : Vincent Rouwhorst
 # Date   : 31/05/2022
