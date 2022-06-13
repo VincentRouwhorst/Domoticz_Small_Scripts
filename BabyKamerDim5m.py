@@ -49,7 +49,7 @@ if __name__ == '__main__':
   countdowntimer = 300 # 5 min = 300 sec
   lampstartlevel = ReadCommand(idx)
 
-  for x in reversed(range(7, lampstartlevel)):  # level 7 is the minimum level for the light to dim to
+  for x in reversed(range(id_name[idx]["min"], lampstartlevel)):  # level 7 is the minimum level for the light to dim to
       print(DOMOTICZ_IP + "/json.htm?type=command&param=switchlight&idx=" + str(idx) + "&switchcmd=Set%20Level&level=" + str(x))
       r = requests.get(DOMOTICZ_IP + "/json.htm?type=command&param=switchlight&idx=" + str(idx) + "&switchcmd=Set%20Level&level=" + str(x))
       siteresponse = r.json()
