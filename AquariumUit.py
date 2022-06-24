@@ -35,10 +35,10 @@ def PushCommand(idx, levelx):
 
 if __name__ == '__main__':
   # Script has been called directly
-  countdowntimer = 2700 # 45 min = 2700 sec
+  countdowntimer = 45 * 60 # 45 min = 2700 sec
   lamplevel = 101 # 0-100
 
-  for x in reversed(lamplevel):  # range=On, reversed=Off script
+  for x in reversed(range(lamplevel)):  # range=On, reversed=Off script
       for z in id_name.keys():
           PushCommand(z, x)
       time.sleep(countdowntimer/lamplevel)

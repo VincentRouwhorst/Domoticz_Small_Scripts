@@ -16,7 +16,7 @@ import time
 
 DOMOTICZ_IP = 'http://127.0.0.1:8080'
 
-id_name = { 722  : {"name" : "Hue Babykamer", "min" : 7, "max" : 85 }}
+id_name = { 722  : {"name" : "Hue Babykamer", "min" : 5, "max" : 85 }}
 
 
 def ReadCommand(idx):
