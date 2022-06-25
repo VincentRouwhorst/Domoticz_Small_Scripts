@@ -16,7 +16,7 @@ import time
 
 DOMOTICZ_IP = 'http://127.0.0.1:8080'
 
-id_name = { 7301 : {"name" : "JMB-C5" }}
+id_name = { 7300 : {"name" : "JMB-C4" }}
 
 def PushCommand(idx, levelx):
     print(DOMOTICZ_IP + "/json.htm?type=command&param=switchlight&idx=" + str(idx) + "&switchcmd=Set%20Level&level=" + str(levelx))
